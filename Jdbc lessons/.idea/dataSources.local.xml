@@ -10,8 +10,17 @@
       <user-name>postgres</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
+          <node negative="1">
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database" qname="flight_repository">
+              <node kind="schema" qname="game" />
+            </node>
+            <node kind="database">
+              <name qname="game" />
+              <name qname="play" />
+            </node>
           </node>
         </introspection-scope>
       </schema-mapping>
